@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 // import 'package:intl/intl.dart';
 // import 'package:untitled/widgets/button_widgets.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:untitled/Course2/pages/homepage.dart';
 
 void main() {
   runApp(
@@ -49,6 +50,22 @@ class _HomeState extends State<Home> {
         title: Text('My first App'),
         centerTitle: true,
         backgroundColor: Theme.of(context).primaryColor,
+      ),
+      body: Container(
+        child: Column(
+          children: [
+            Text("Hello intro"),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Homepage()),
+                );
+              },
+              child: Text("Press to reveal"),
+            ),
+          ],
+        ),
       ),
       // body: Container(
       //   color: Colors.blueAccent,
