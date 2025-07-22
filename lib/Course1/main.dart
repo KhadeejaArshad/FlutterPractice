@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:untitled/TextCmp/textcmp.dart';
-import 'package:intl/intl.dart';
-import 'package:untitled/widgets/button_widgets.dart';
+// import 'package:flutter/rendering.dart';
+// import 'package:untitled/TextCmp/textcmp.dart';
+// import 'package:intl/intl.dart';
+// import 'package:untitled/widgets/button_widgets.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() {
   runApp(
@@ -37,6 +38,7 @@ class _HomeState extends State<Home> {
     Colors.pink,
     Colors.redAccent,
     Colors.purpleAccent,
+    Colors.greenAccent,
   ];
   @override
   Widget build(BuildContext context) {
@@ -48,36 +50,146 @@ class _HomeState extends State<Home> {
         centerTitle: true,
         backgroundColor: Theme.of(context).primaryColor,
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Container(
-              width: 120,
-              child: ButtonWidget(
-                btnName: 'Login',
-                icon: Icon(Icons.login, color: Colors.white),
-                color: Colors.pinkAccent,
-                style: mText(),
-                callback: () {
-                  print("Loggen in!!!");
-                },
-              ),
-            ),
-            Container(
-              width: 120,
-              child: ButtonWidget(
-                btnName: 'Play',
-                icon: Icon(Icons.play_arrow, size: 20),
-                style: mText(),
-                callback: () {
-                  print("Playing!!!");
-                },
-              ),
-            ),
-          ],
-        ),
-      ),
+      // body: Container(
+      //   color: Colors.blueAccent,
+      //   width: 500,
+      //   height: 500,
+      //   child: Stack(
+      //     children: [
+      //       Positioned(
+      //         left: 1,
+      //         bottom: 1,
+      //         child: Container(width: 100, height: 100, color: Colors.amber),
+      //       ),
+      //     ],
+      //   ),
+      // ),
+
+      // body: Center(
+      //   child: FaIcon(FontAwesomeIcons.gamepad, color: Colors.amber, size: 40),
+      // ),
+
+      // body: Center(
+      //   child: RichText(
+      //     text: TextSpan(
+      //       style: TextStyle(fontSize: 16, color: Colors.grey),
+      //       children: <TextSpan>[
+      //         TextSpan(text: "Hello"),
+      //         TextSpan(
+      //           text: " Khadeeja",
+      //           style: TextStyle(
+      //             fontSize: 18,
+      //             color: Colors.blueAccent,
+      //             fontWeight: FontWeight.bold,
+      //           ),
+      //         ),
+      //         TextSpan(text: "from"),
+      //         TextSpan(
+      //           text: "Pakistan",
+      //           style: TextStyle(
+      //             fontSize: 18,
+      //             color: Colors.greenAccent,
+      //             fontWeight: FontWeight.bold,
+      //           ),
+      //         ),
+      //       ],
+      //     ),
+      //   ),
+      // ),
+
+      // body: Wrap(
+      //   direction: Axis.vertical,
+      //   children: [
+      //     SizedBox.square(
+      //       dimension: 100,
+      //       child: Container(decoration: BoxDecoration(color: Colors.amber)),
+      //     ),
+      //     SizedBox(height: 20),
+      //     SizedBox.square(
+      //       dimension: 100,
+      //       child: Container(decoration: BoxDecoration(color: Colors.amber)),
+      //     ),
+      //     SizedBox(height: 20),
+      //     SizedBox.square(
+      //       dimension: 100,
+      //       child: Container(decoration: BoxDecoration(color: Colors.amber)),
+      //     ),
+      //   ],
+      // ),
+
+      // body: Center(
+      //   child: ConstrainedBox(
+      //     constraints: BoxConstraints(
+      //       maxHeight: 200,
+      //       maxWidth: 200,
+      //       minHeight: 50,
+      //       minWidth: 100,
+      //     ),
+      //     child: SizedBox.expand(
+      //       child: ElevatedButton(onPressed: () {}, child: Text("Hello")),
+      //     ),
+      //   ),
+      // ),
+      // body: Center(
+      //   child: ConstrainedBox(
+      //     constraints: BoxConstraints(
+      //       maxHeight: 200,
+      //       maxWidth: 200,
+      //       minHeight: 50,
+      //       minWidth: 100,
+      //     ),
+      //     child: SizedBox.shrink(
+      //       child: ElevatedButton(onPressed: () {}, child: Text("Hello")),
+      //     ),
+      //   ),
+      // ),
+      // body: Container(
+      //   width: double.infinity,
+      //   child: Wrap(
+      //     direction: Axis.horizontal,
+      //     alignment: WrapAlignment.center,
+      //     spacing: 11,
+      //     runSpacing: 11,
+      //     children: [
+      //       Container(width: 100, height: 100, color: colors[0]),
+      //       Container(width: 100, height: 100, color: colors[1]),
+      //       Container(width: 100, height: 100, color: colors[2]),
+      //       Container(width: 100, height: 100, color: colors[3]),
+      //       Container(width: 100, height: 100, color: colors[4]),
+      //       Container(width: 100, height: 100, color: colors[5]),
+      //     ],
+      //   ),
+      // ),
+      // body: Center(
+      //   child: Column(
+      //     mainAxisAlignment: MainAxisAlignment.center,
+      //     children: [
+      //       Container(
+      //         width: 120,
+      //         child: ButtonWidget(
+      //           btnName: 'Login',
+      //           icon: Icon(Icons.login, color: Colors.white),
+      //           color: Colors.pinkAccent,
+      //           style: mText(),
+      //           callback: () {
+      //             print("Loggen in!!!");
+      //           },
+      //         ),
+      //       ),
+      //       Container(
+      //         width: 120,
+      //         child: ButtonWidget(
+      //           btnName: 'Play',
+      //           icon: Icon(Icons.play_arrow, size: 20),
+      //           style: mText(),
+      //           callback: () {
+      //             print("Playing!!!");
+      //           },
+      //         ),
+      //       ),
+      //     ],
+      //   ),
+      // ),
       // body: Container(
       //   width: 300,
       //   height: 300,
