@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 // import 'package:untitled/widgets/button_widgets.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:untitled/Course2/pages/homepage.dart';
+import 'package:untitled/Course2/pages/range.dart';
+import 'package:untitled/Course2/pages/splash_screen.dart';
 
 void main() {
   runApp(
@@ -16,7 +18,9 @@ void main() {
           headlineLarge: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
         ),
       ),
-      home: Home(),
+      // home: Home(),
+      // home: SplashScreen(),
+      home: Range(),
     ),
   );
 }
