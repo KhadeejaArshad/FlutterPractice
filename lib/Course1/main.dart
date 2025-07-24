@@ -8,6 +8,7 @@ import 'package:untitled/Course2/pages/3DList.dart';
 import 'package:untitled/Course2/pages/Clippers.dart';
 import 'package:untitled/Course2/pages/Gradient.dart';
 import 'package:untitled/Course2/pages/RippleEffect.dart';
+import 'package:untitled/Course2/pages/Shared_preference.dart';
 import 'package:untitled/Course2/pages/animated.dart';
 import 'package:untitled/Course2/pages/homepage.dart';
 import 'package:untitled/Course2/pages/range.dart';
@@ -31,7 +32,8 @@ void main() {
       // home: Clippers(),
       // home: GradientPage(),
       // home: TweenAnimation(),
-      home: RippleEffect(),
+      // home: RippleEffect(),
+      home: SharedPreference(),
     ),
   );
 }
