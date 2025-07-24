@@ -7,10 +7,12 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:untitled/Course2/pages/3DList.dart';
 import 'package:untitled/Course2/pages/Clippers.dart';
 import 'package:untitled/Course2/pages/Gradient.dart';
+import 'package:untitled/Course2/pages/RippleEffect.dart';
 import 'package:untitled/Course2/pages/animated.dart';
 import 'package:untitled/Course2/pages/homepage.dart';
 import 'package:untitled/Course2/pages/range.dart';
 import 'package:untitled/Course2/pages/splash_screen.dart';
+import 'package:untitled/Course2/pages/tweenAnimation.dart';
 
 void main() {
   runApp(
@@ -27,7 +29,9 @@ void main() {
       // home: Range(),
       // home: ListView3D(),
       // home: Clippers(),
-      home: GradientPage(),
+      // home: GradientPage(),
+      // home: TweenAnimation(),
+      home: RippleEffect(),
     ),
   );
 }
