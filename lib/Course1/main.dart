@@ -4,6 +4,9 @@ import 'package:flutter/material.dart';
 // import 'package:intl/intl.dart';
 // import 'package:untitled/widgets/button_widgets.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:untitled/Course2/pages/3DList.dart';
+import 'package:untitled/Course2/pages/Clippers.dart';
+import 'package:untitled/Course2/pages/animated.dart';
 import 'package:untitled/Course2/pages/homepage.dart';
 import 'package:untitled/Course2/pages/range.dart';
 import 'package:untitled/Course2/pages/splash_screen.dart';
@@ -20,7 +23,9 @@ void main() {
       ),
       // home: Home(),
       // home: SplashScreen(),
-      home: Range(),
+      // home: Range(),
+      // home: ListView3D(),
+      home: Clippers(),
     ),
   );
 }
