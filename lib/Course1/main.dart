@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:untitled/Course2/pages/3DList.dart';
 import 'package:untitled/Course2/pages/Clippers.dart';
+import 'package:untitled/Course2/pages/Gradient.dart';
 import 'package:untitled/Course2/pages/animated.dart';
 import 'package:untitled/Course2/pages/homepage.dart';
 import 'package:untitled/Course2/pages/range.dart';
@@ -25,7 +26,8 @@ void main() {
       // home: SplashScreen(),
       // home: Range(),
       // home: ListView3D(),
-      home: Clippers(),
+      // home: Clippers(),
+      home: GradientPage(),
     ),
   );
 }
